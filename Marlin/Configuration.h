@@ -842,7 +842,11 @@
 //#define I_DRIVER_TYPE  A4988
 //#define J_DRIVER_TYPE  A4988
 //#define K_DRIVER_TYPE  A4988
+<<<<<<< HEAD
 #define E0_DRIVER_TYPE TMC2209
+=======
+#define E0_DRIVER_TYPE A4988
+>>>>>>> 03a469724af05223be2a8bac71a1082c9ebbc55c
 //#define E1_DRIVER_TYPE A4988
 //#define E2_DRIVER_TYPE A4988
 //#define E3_DRIVER_TYPE A4988
@@ -1348,7 +1352,11 @@
 #define Z_MIN_POS 0
 #define X_MAX_POS X_BED_SIZE
 #define Y_MAX_POS Y_BED_SIZE
+<<<<<<< HEAD
 #define Z_MAX_POS 250
+=======
+#define Z_MAX_POS 200
+>>>>>>> 03a469724af05223be2a8bac71a1082c9ebbc55c
 //#define I_MIN_POS 0
 //#define I_MAX_POS 50
 //#define J_MIN_POS 0
@@ -1942,6 +1950,7 @@
  * Automatically start and stop the print job timer on M104/M109/M140/M190/M141/M191.
  * The print job timer will only be stopped if the bed/chamber target temp is
  * below BED_MINTEMP/CHAMBER_MINTEMP.
+<<<<<<< HEAD
  *
  *   M104 (hotend, no wait)  - high temp = none,        low temp = stop timer
  *   M109 (hotend, wait)     - high temp = start timer, low temp = stop timer
@@ -1950,6 +1959,16 @@
  *   M141 (chamber, no wait) - high temp = none,        low temp = stop timer
  *   M191 (chamber, wait)    - high temp = start timer, low temp = none
  *
+=======
+ *
+ *   M104 (hotend, no wait)  - high temp = none,        low temp = stop timer
+ *   M109 (hotend, wait)     - high temp = start timer, low temp = stop timer
+ *   M140 (bed, no wait)     - high temp = none,        low temp = stop timer
+ *   M190 (bed, wait)        - high temp = start timer, low temp = none
+ *   M141 (chamber, no wait) - high temp = none,        low temp = stop timer
+ *   M191 (chamber, wait)    - high temp = start timer, low temp = none
+ *
+>>>>>>> 03a469724af05223be2a8bac71a1082c9ebbc55c
  * For M104/M109, high temp is anything over EXTRUDE_MINTEMP / 2.
  * For M140/M190, high temp is anything over BED_MINTEMP.
  * For M141/M191, high temp is anything over CHAMBER_MINTEMP.
